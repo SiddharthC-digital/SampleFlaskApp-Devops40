@@ -31,6 +31,8 @@ def test_test1(client):
     assert response.status_code == 200
     expected_text = 'test'
     assert expected_text.encode() in response.data
+
+
 def test_test2(client):
     response = client.get('/test3')
     assert response.status_code == 200

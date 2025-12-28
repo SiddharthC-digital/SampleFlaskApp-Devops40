@@ -19,20 +19,11 @@ def create_app():
 
     @app.route('/test2')
     def test1():
-        return "test 2"
+        return "test 20
 
     @app.route('/test3')
     def test3():
         return "test 1234"
-
-    @app.route('/test4')
-    def test4():
-        i =1
-        while i < 10:
-            print("hi")
-        return "test 4"
-    return app
-
 
 if __name__ == '__main__':
     app = create_app()
